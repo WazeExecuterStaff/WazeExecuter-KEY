@@ -60,13 +60,12 @@
             left: 0;
         }
     </style>
-    <script defer="" data-domain="gray-lanie-73.tiiny.site" src="https://analytics.tiiny.site/js/plausible.js"></script>
 </head>
 <body>
     <div class="background"></div>
     <div class="container">
         <h1 id="header-text">Waze Hub</h1>
-        <div id="textbox" class="textbox">Loadstring</div>
+        <div id="textbox" class="textbox">LoadString ------------------</div>
     </div>
 
     <script>
@@ -156,11 +155,11 @@
             init();
         });
 
-        // Check if the page was accessed via the correct referrer (your Linkvertise link)
+        // Check if the page was accessed via the correct referrer (your Linkvertise URL)
         window.onload = function() {
-            const allowedReferrer = "https://link-center.net/1251336/waze-hub";  // Replace with your actual Linkvertise URL
+            const allowedReferrer = "https://linkvertise.com/1251336/waze-hub?o=sharing";  //Replace with your actual Linkvertise URL
             const referrer = document.referrer;
-            
+
             // If the referrer doesn't match the allowed one, update the page content to indicate bypass
             if (referrer !== allowedReferrer) {
                 document.getElementById("header-text").innerText = "Bypass Detected";
